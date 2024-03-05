@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import cmd
 import re
 import shlex
@@ -12,4 +14,4 @@ class HBNBCommand(cmd.Cmd):
         """
         return True
    
-   
+
