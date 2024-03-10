@@ -41,5 +41,46 @@ Get more commands from the help
 
    ```
    ./console.py
-   (hbnb) help quit
+   (hbnb) help
    ```
+Expected output
+
+Documented commands (type help <topic>):
+========================================
+EOF  all  count  create  destroy  help  quit  show  update
+
+
+# To retrieve more all modals data 
+
+(hbnb) User.all()
+(hbnb) Place.all()
+(hbnb) City.all()
+(hbnb) Amenity.all()
+(hbnb) Review.all()
+(hbnb) State.all()
+
+# Count instances
+
+(hbnb) User.count()
+(hbnb) Place.count()
+(hbnb) City.count()
+(hbnb) Amenity.count()
+(hbnb) Review.count()
+(hbnb) State.count()
+
+# Show instances
+
+(hbnb) User.show("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
+(hbnb) Place.show("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
+(hbnb) City.show("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
+(hbnb) Amenity.show("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
+(hbnb) Review.show("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
+(hbnb) State.show("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
+
+# Destroy the instance
+(hbnb) User.destroy("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
+(hbnb) Place.destroy("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
+(hbnb) City.destroy("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
+(hbnb) Amenity.destroy("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
+(hbnb) Review.destroy("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
+(hbnb) State.destroy("246c227a-d5c1-403d-9bc7-6a47bb9f0f68")
