@@ -4,6 +4,7 @@ Define the BaseModel class.
 """
 from uuid import uuid4
 from datetime import datetime
+from models import storage
 
 
 class BaseModel:
@@ -22,12 +23,15 @@ class BaseModel:
 
             self.created_at = datetime.utcnow()
             self.updated_at = datetime.utcnow()
+
+            storage.new(self)
    
 
      def save(self):
          """Update the current date and time."""
 
          self.updated_at = datetime.utcnow()
+         storage.save()
          return self.updated_at
 
      def to_dict(self):
